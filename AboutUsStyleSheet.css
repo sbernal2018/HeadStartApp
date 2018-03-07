@@ -1,0 +1,19 @@
+div{
+    overflow-x:hidden;
+}
+
+
+#header{
+    height:30vh;
+    border: 1em;
+    border-style:dotted;
+    border-color:red;
+    background-color:blue;
+
+
+}
+
+h1{
+    text-align:center;
+    margin-top:10vh;
+}
