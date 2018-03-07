@@ -17,3 +17,20 @@ h1{
     text-align:center;
     margin-top:10vh;
 }
+
+p{
+    text-align:center;
+
+
+
+}
+
+
+
+#first_section{
+    padding: 2em;
+    border-bottom:1em;
+    border-color:red;
+    border-style:dotted;
+
+}
