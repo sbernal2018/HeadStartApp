@@ -13,6 +13,14 @@ div{
 
 }
 
+
+body{
+    /*background-image: url("https://wallpapercave.com/wp/p3mG2Tt.jpg");*/
+    background-size: contain;
+
+
+}
+
 h1{
     text-align:center;
     margin-top:10vh;
@@ -25,10 +33,16 @@ p{
 
 }
 
+.sides{
+    background-image:url(images/HeadStart.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
 
 
 #first_section{
-    padding: 2em;
+    padding-top: 1em;
     border-bottom:1em;
     border-color:red;
     border-style:dotted;
