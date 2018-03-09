@@ -1,6 +1,19 @@
-.item{
+#CEO{
 
-  width: auto;
+  width:auto;
   height:400px;
 
+}
+
+#CCO{
+  float: right;
+  width:auto;
+  height:400px;
+}
+
+#team{
+  width: auto;
+  height: 500px;
+  position: center;
+  padding-left: 50px;
 }
