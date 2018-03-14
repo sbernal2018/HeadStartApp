@@ -4,22 +4,14 @@ div{
 
 
 #header{
-    height:30vh;
+    height:28vh;
     border: 1em;
-    border-style:dotted;
-    border-color:red;
+    
     background-color:blue;
 
 
 }
 
-
-body{
-    /*background-image: url("https://wallpapercave.com/wp/p3mG2Tt.jpg");*/
-    background-size: contain;
-
-
-}
 
 h1{
     text-align:center;
@@ -28,23 +20,21 @@ h1{
 
 p{
     text-align:center;
-
-
-
 }
 
-.sides{
-    background-image:url(images/HeadStart.png);
-    background-size:contain;
-    background-repeat: no-repeat;
+#sides1{
+    background-image: url(Wings_LP.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: contain;
+   
 }
 
 
 
-#first_section{
+.section{
     padding-top: 1em;
-    border-bottom:1em;
-    border-color:red;
-    border-style:dotted;
+   
 
 }
