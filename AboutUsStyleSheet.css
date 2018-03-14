@@ -7,7 +7,7 @@ div{
     height:28vh;
     border: 1em;
     
-    background-color:blue;
+    background-color: #b3ecff;
 
 
 }
@@ -16,16 +16,34 @@ div{
 h1{
     text-align:center;
     margin-top:10vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 p{
     text-align:center;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
+
+
+
+
 #sides1{
-    background-image: url(Wings_LP.png);
+    /*background-image: url(Wings_LP.png);
     background-repeat: repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background-position: center; 
+    background-size: contain;
+   
+}
+
+
+
+#sides2{
+    /*background-image: url(Wings_RP.png);
+    background-repeat: repeat;
+    background-attachment: fixed;*/
     background-position: center; 
     background-size: contain;
    
