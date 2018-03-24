@@ -1,19 +1,37 @@
 #CEO{
-
+  display:block;
+  margin:auto;
   width:auto;
-  height:400px;
+  margin-top:10vh;
+ 
 
 }
 
 #CCO{
-  float: right;
+  display:block;
+  margin:auto;
   width:auto;
-  height:400px;
+  margin-top: 10vh;
+ 
 }
 
-#team{
-  width: auto;
-  height: 500px;
-  position: center;
-  /*padding-left: 50px;*/
+
+h1{
+  text-align: center;
 }
+
+
+p{
+  text-align:center;
+
+
+
+
+}
+
+#upper{
+  margin-left:10vw;
+  margin-right:10vw;
+}
+
+
