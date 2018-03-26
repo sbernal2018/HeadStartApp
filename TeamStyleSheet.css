@@ -1,17 +1,16 @@
-
-
-#sec_dec{
-  background-color:rgb(116, 207, 250);
-  height:10vh;
-  margin-right:0 !important;
+#car-img{
+  display:block;
+  margin:auto;
+  height:auto;
+  width:70vw;
 }
 
 #CEO{
   display:block;
   margin:auto;
   height:auto;
-  width:80vw;
-  margin-top: 10vh;
+  width:70vw;
+  margin-top: 5vh;
  
 
 }
@@ -20,16 +19,16 @@
   display:block;
   margin:auto;
   height:auto;
-  width:80vw;
-  margin-top: 10vh;
+  width:70vw;
+  margin-top: 5vh;
  
 }
 
 
 h1{
-  text-align: center;
+  text-align: center !important;
   font-family: 'Anton', sans-serif !important;
-  font-size:7vw !important;
+  font-size:6vw !important;
 }
 
 
