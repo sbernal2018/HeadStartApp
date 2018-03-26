@@ -30,9 +30,7 @@ p{
 
 
 #sides1{
-    /*background-image: url(Wings_LP.png);
-    background-repeat: repeat;
-    background-attachment: fixed;*/
+    margin-right:0;
     background-position: center; 
     background-size: contain;
    
@@ -41,9 +39,7 @@ p{
 
 
 #sides2{
-    /*background-image: url(Wings_RP.png);
-    background-repeat: repeat;
-    background-attachment: fixed;*/
+
     background-position: center; 
     background-size: contain;
    
