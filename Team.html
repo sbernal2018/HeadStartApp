@@ -18,12 +18,76 @@
     <script type="text/javascript" src="carousel.js"></script>
 
 <!-- font for bold headings font-family: 'Anton', sans-serif; -->
+<style>
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 150%;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+</style>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 
 </head>
 
 
 <body>
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index.html">Home</a>
+  <a href="Shopping.html">Products</a>
+  <a href="Team.html">Meet the Team</a>
+  <a href="News&Updates.html">News and Updates</a>
+
+</div>
+<span onclick="openNav()" style="font-size:250%; margin-left:1%">&#9776;</span>
 
 
 <div class="container-fluid">
@@ -59,7 +123,7 @@
 
 </div>
 
-    
+
 <hr>
 <!--Relations department*****************************************************************************-->
 
@@ -82,7 +146,7 @@
         <div class="col-sm-6">
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            
+
                 <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -91,11 +155,11 @@
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                 </ol>
 
-            
+
                 <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <img id="car-img" src="Images/Team/RelationsDP/CRO.webp">
-                    
+
                     <div class="carousel-caption">
                         <p class="ss">LA is always so much fun!</p>
                     </div>
@@ -125,7 +189,7 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
-            
+
         </div>
     </div>
 </div>
@@ -144,17 +208,17 @@
             <p>Our mission as the marketing department is to increase productivity by making our firm's product and services more appealing to our customers.</p>
         </div>
     </div>
-    
+
 </div>
 
 <div class="container-fluid">
 
         <div class=row>
-    
+
             <div class="col-sm-6">
-    
+
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                
+
                     <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -162,8 +226,8 @@
                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                     </ol>
-    
-                
+
+
                     <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img id="car-img" src="Images/Team/MarketingDP/AM.webp">
@@ -177,10 +241,10 @@
                     <div class="item">
                         <img id="car-img" src="Images/Team/MarketingDP/VPM.webp">
                     </div>
-                
+
                     </div>
-    
-                    
+
+
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -190,11 +254,11 @@
                     <span class="sr-only">Next</span>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    
+
 
 <hr>
 <!--Technology Deparment ***********************************************************************************-->
@@ -206,18 +270,18 @@
             <p>Our mission as the Technology Department is to improve our firm by incorporating efficient technological extensions so that clients and coworkers have a more pleasant experience.  </p>
         </div>
     </div>
-    
+
 </div>
 
 
 <div class="container-fluid">
 
         <div class=row>
-    
+
             <div class="col-sm-6">
-    
+
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                
+
                     <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -225,8 +289,8 @@
                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                     </ol>
-    
-                
+
+
                     <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img id="car-img" src="Images/Team/TechnologyDP/CTO.webp">
@@ -240,10 +304,10 @@
                     <div class="item">
                         <img id="car-img" src="Images/Team/TechnologyDP/WD.webp">
                     </div>
-                    
+
                     </div>
-    
-                    
+
+
                     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -253,11 +317,11 @@
                     <span class="sr-only">Next</span>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    
+
 
 
 <hr>
@@ -270,18 +334,18 @@
                 <p>Our mission is to inform the public so that HeadStart Advisors customers have a firm understanding, we will do this by spreading the message through social media. </p>
             </div>
         </div>
-    
+
     </div>
 
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -289,8 +353,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/InformationDP/ASM.webp">
@@ -304,10 +368,10 @@
                         <div class="item">
                             <img id="car-img" src="Images/Team/InformationDP/VPI.webp">
                         </div>
-                       
+
                         </div>
-        
-                        
+
+
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -317,11 +381,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 <hr>
 <!-- Services Department *************************************************************************************-->
@@ -333,17 +397,17 @@
                 <p>Our mission is to fulfill our customers needs to the fullest potential by providing innovative and creative service to meet their financial needs. </p>
             </div>
         </div>
-        
+
     </div>
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -351,8 +415,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/ServicesDP/CSO.webp">
@@ -360,10 +424,10 @@
                         <div class="item">
                             <img id="car-img" src="Images/Team/ServicesDP/SM.webp">
                         </div>
-                        
+
                         </div>
-        
-                        
+
+
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -373,11 +437,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 <hr>
 <!-- Finance Department *************************************************************************************-->
@@ -389,17 +453,17 @@
                 <p>Our mission as the finance department is to accurately record and manage all the balances and data to sure we project an error-free financial standing. Moreover, to develop a rational and logical budget for the firm.  </p>
             </div>
         </div>
-        
+
     </div>
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -407,8 +471,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/FinanceDP/AP.webp">
@@ -419,10 +483,10 @@
                         <div class="item">
                             <img id="car-img" src="Images/Team/FinanceDP/VPF.webp">
                         </div>
-                        
+
                         </div>
-        
-                        
+
+
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -432,11 +496,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 <hr>
 <!-- Financial Advisors *************************************************************************************-->
@@ -444,22 +508,22 @@
 <div>
         <div class="row">
             <div class="col-sm-6">
-                <h1>Financial Department</h1>
+                <h1>Marketing Department</h1>
                 <p>Our mission as the marketing department is to increase productivity by making our firm's product and services more appealing to our customers </p>
             </div>
         </div>
-        
+
     </div>
 
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -467,8 +531,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/FinancialAdvisors/CFA.webp">
@@ -479,10 +543,10 @@
                         <div class="item">
                             <img id="car-img" src="Images/Team/FinancialAdvisors/SA.webp">
                         </div>
-                       
+
                         </div>
-        
-                        
+
+
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -492,11 +556,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 <hr>
 <!-- Operations Department *************************************************************************************-->
@@ -508,17 +572,17 @@
                 <p>Our Departments mission is to provide leadership, a sense of functionality, provide workers with salaries and to an organized environment. </p>
             </div>
         </div>
-        
+
     </div>
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -526,8 +590,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/OperationsDP/COOC.webp">
@@ -538,10 +602,10 @@
                         <div class="item">
                             <img id="car-img" src="Images/Team/OperationsDP/VPHR.webp">
                         </div>
-                    
+
                         </div>
-        
-                        
+
+
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -551,11 +615,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 <hr>
 <!-- Introducing our Interns *************************************************************************************-->
@@ -567,18 +631,18 @@
                 <h1>Introducing our Interns</h1>
             </div>
         </div>
-        
+
     </div>
 
 
     <div class="container-fluid">
 
             <div class=row>
-        
+
                 <div class="col-sm-6">
-        
+
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    
+
                         <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -586,8 +650,8 @@
                         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                         </ol>
-        
-                    
+
+
                         <div class="carousel-inner" role="listbox">
                         <div class="item active">
                             <img id="car-img" src="Images/Team/Interns/FI.webp">
@@ -608,7 +672,7 @@
                             <img id="car-img" src="Images/Team/Interns/TI.webp">
                         </div>
                         </div>
-        
+
                         <
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -619,11 +683,11 @@
                         <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        
+
 
 
 
