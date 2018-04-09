@@ -8,32 +8,105 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
   <style>
+
+
+
   body{
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   p{
-    color:white;
-    background-color: navy;
+    color:navy;
+    background-color: white;
     border-style: solid;
     border-color:navy;
-    border-radius: 5%;
+    border-radius: 3%;
+    padding:2%;
   }
+
   h1{
     color:white;
   }
+  .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* The navigation menu links */
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 400%;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+      transition: margin-left .5s;
+      padding: 20px;
+  }
   </style>
+  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "50%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </head>
+
+
+
 <body background="Images/sky.jpeg">
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Index.html">Home</a>
+  <a href="Shopping.html">Products</a>
+  <a href="Team.html">Meet the Team</a>
+  <a href="News&Updates.html">News and Updates</a>
+
+</div>
+<span onclick="openNav()" style="font-size:600%; margin-left:1%">&#9776;</span>
+
   <center>
     <img src="Images/HeadStartLogo.png" style="margin-top:10%;">
-    <h1 style="font-size:450%;padding:.5%;">Choose HeadStart or Finish Last.</h1>
+    <h1 style="font-size:400%;padding:.5%;">Choose HeadStart or Finish Last.</h1>
 
     <div class="container" style="padding:2%">
 
       <div class="row"><div class="col-sm-12">
-        <h1 style="font-size:270%">Mission Statement</h1>
+        <h1 style="font-size:270%; margin-top:3%;margin-bottom:3%;">Mission Statement</h1>
       </div></div>
 
       <div class="row"><div class="col-sm-12">
@@ -41,7 +114,7 @@
       </div></div>
 
     <div class="row"><div class="col-sm-12">
-  <h1 style="font-size:270%;">Our Services</h1>
+  <h1 style="font-size:270%;margin-top:3%;margin-bottom:3%;">Our Services</h1>
 </div></div>
 
 <div class="row"><div class="col-sm-12">
@@ -49,7 +122,7 @@
 Our financial advisors are available to provide clients with advice on how to manage their money. We recommend strategies that clients can use to achieve their financial goals and objectives, including advice like: </br>- Retirement plans </br>- Budgeting </br>- Cash management </br>- Investments.</br> We provide our clients the most appropiate products and services to make sure that our clients understand, and are aware of the products that helps them reach their goals. Your future is our future.</p>
 
 </div></div>
-<a href="headstartbs.html" style="color:#1CB1D0;font-size:300%;"class="btn btn-default">Interested?</a>
+<a href="Shopping.html" style="width: 100%;color:white;background-color:#448cff;font-size:450%;margin-top:3%;margin-bottom:3%;"class="btn btn-default">Interested?</a>
 
 
 

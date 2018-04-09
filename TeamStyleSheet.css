@@ -1,19 +1,56 @@
-#CEO{
+#car-img{
+  display:block;
+  margin:auto;
+  height:auto;
+  width:70vw;
+}
 
-  width:auto;
-  height:400px;
+#CEO{
+  display:block;
+  margin:auto;
+  height:auto;
+  width:70vw;
+  margin-top: 5vh;
+ 
 
 }
 
 #CCO{
-  float: right;
-  width:auto;
-  height:400px;
+  display:block;
+  margin:auto;
+  height:auto;
+  width:70vw;
+  margin-top: 5vh;
+ 
 }
 
-#team{
-  width: auto;
-  height: 500px;
-  position: center;
-  /*padding-left: 50px;*/
+
+h1{
+  text-align: center !important;
+  font-family: 'Anton', sans-serif !important;
+  font-size:6vw !important;
 }
+
+
+p{
+  text-align:center;
+
+
+
+
+}
+
+p.ss{
+  text-align:center;
+}
+
+
+#upper{
+  padding-right:10vw;
+  padding-left:10vw;
+  
+
+  
+}
+
+
