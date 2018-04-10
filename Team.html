@@ -56,7 +56,14 @@
     font-size: 36px;
     margin-left: 50px;
 }
-
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+.sticky + .content {
+padding-top: 60px;
+}
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
@@ -88,7 +95,7 @@ function closeNav() {
   <a href="News&Updates.html">News and Updates</a>
 
 </div>
-<span onclick="openNav()" style="font-size:250%; margin-left:1%; color:white;">&#9776;</span>
+<span id="rebar" onclick="openNav()" style="font-size:250%; margin-left:1%; color:white;">&#9776;</span>
 
 
 <div class="container-fluid">
@@ -687,7 +694,19 @@ function closeNav() {
 
 
 
+        <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("rebar");
+        var sticky = navbar.offsetTop;
 
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 
 

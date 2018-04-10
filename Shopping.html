@@ -108,7 +108,7 @@ function closeNav() {
       <a href="News&Updates.html">News and Updates</a>
 
     </div>
-    <span onclick="openNav()" style="font-size:600%; margin-left:1%; color:white;">&#9776;</span>
+    <span id="rebar" onclick="openNav()" style="font-size:600%; margin-left:1%; color:white;">&#9776;</span>
 
 <center>
   <h1 style="font-size:350%">Our Products<h1>
@@ -516,6 +516,18 @@ function closeNav() {
                                 </div>
 
 
+                                <script>
+                                window.onscroll = function() {myFunction()};
+                                var navbar = document.getElementById("rebar");
+                                var sticky = navbar.offsetTop;
 
+                                function myFunction() {
+                                  if (window.pageYOffset >= sticky) {
+                                    navbar.classList.add("sticky")
+                                  } else {
+                                    navbar.classList.remove("sticky");
+                                  }
+                                }
+                                </script>
     </body>
 </html>
