@@ -46,7 +46,7 @@
 
   /* The navigation menu links */
   .sidenav a {
-      padding: 8px 8px 8px 32px;
+      padding: 200px 8px 8px 32px;
       text-decoration: none;
       font-size: 400%;
       font-weight: bold;
@@ -85,7 +85,7 @@
   </style>
   <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("mySidenav").style.width = "60%";
 }
 
 function closeNav() {
@@ -107,7 +107,7 @@ function closeNav() {
   <a href="News&Updates.html">News and Updates</a>
 
 </div>
-<span onclick="openNav()" style="font-size:600%; margin-left:1%; color: white;">&#9776;</span>
+<span id="rebar" onclick="openNav()" style="font-size:600%; margin-left:1%; color: white;">&#9776;</span>
 
   <center>
     <img src="Images/HeadStartLogo.png" style="margin-top:10%;">
@@ -120,7 +120,7 @@ function closeNav() {
       </div></div>
 
       <div class="row"><div class="col-sm-12">
-        <p style="font-size:250%">To provide leadership, a sense of functionality and an organized environment; which is crucial for HeadStart Advisors’ success. We ensure that &nbsp;well-informed, prepared, and motivated employees can effectively perform company processes and practices.We strive to always exceed the expectations of all of our clients and to fully support our company's strategy.</p>
+        <p style="font-size:250%; margin:6%;">To provide leadership, a sense of functionality and an organized environment; which is crucial for HeadStart Advisors’ success. We ensure that &nbsp;well-informed, prepared, and motivated employees can effectively perform company processes and practices.We strive to always exceed the expectations of all of our clients and to fully support our company's strategy.</p>
       </div></div>
 
     <div class="row"><div class="col-sm-12">
@@ -128,20 +128,20 @@ function closeNav() {
 </div></div>
 
 <div class="row"><div class="col-sm-12">
-<p style="font-size:250%">Ask our Financial Advisors.
+<p style="font-size:250%; margin:6%;">Ask our Financial Advisors.
 Our financial advisors are available to provide clients with advice on how to manage their money. We recommend strategies that clients can use to achieve their financial goals and objectives, including advice like: </br>- Retirement plans </br>- Budgeting </br>- Cash management </br>- Investments.</br> We provide our clients the most appropiate products and services to make sure that our clients understand, and are aware of the products that helps them reach their goals. Your future is our future.</p>
 
 </div></div>
-<a href="Shopping.html" style="width: 100%;color:white;background-color:#448cff;font-size:450%;margin-top:3%;margin-bottom:3%;"class="btn btn-default">Interested?</a>
+<a href="Shopping.html" style="width: 90%;color:white;background-color:#448cff;font-size:450%;margin-top:3%;margin-bottom:3%;"class="btn btn-default">Interested?</a>
 
 
 
 </div>
 
 </center>
-<!--<script>
+<script>
 window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("mySidenav");
+var navbar = document.getElementById("rebar");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -151,6 +151,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-</script>-->
+</script>
 </body>
 </html>
