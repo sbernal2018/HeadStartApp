@@ -1,0 +1,16 @@
+
+Products
+- text way too small
+- header signficantly bigger 
+- all text not in boxs should be white to stand out
+- i would recommend also having the image above the description that way it becomes bigger and more evident to the user
+- bigger buy buttin and only 1 button if can
+- i would also recommend looking into a shopping cart system simliar to the one on the nuapps website
+- background is very nice
+
+Team --> check if the background works with Emanuel's page      
+- keep background similar to ones with the other pages
+- remove quotes from photos
+- with the buttons on both sides make them more white to help blemd in with the new blue background
+- center the image verticaly within each of the slide show panels
+- UNIFORM PICTURE SIZES TO REMOVE DISTORTION
