@@ -3,6 +3,21 @@ body{
     background-size: cover;
 }
 
+p{
+    font-size: 135%;
+    color: white;
+    margin-top: 3%;
+    
+}
+
+h2{
+    color:white;
+}
+
+h1{
+    color: white;
+}
+
 
 
 
