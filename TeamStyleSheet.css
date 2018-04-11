@@ -42,12 +42,18 @@ h1{
 }
 
 
+.glyphicon.glyphicon-chevron-right{
+  color:yellow;
+}
+
+.glyphicon.glyphicon-chevron-left{
+  color:yellow;
+}
+
+
 p{
   text-align:center;
   color:white;
-
-
-
 }
 
 
