@@ -1,13 +1,15 @@
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="CarAndNav.js"></script>
+
 
 
 <style>
@@ -75,14 +77,7 @@ h1{
 }
 </style>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "60%";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+
 
 </head>
 
@@ -91,6 +86,7 @@ function closeNav() {
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="Index.html">Home</a>
+  <a href="AbousUs.html">About Us</a>
   <a href="Shopping.html">Products</a>
   <a href="Team.html">Meet the Team</a>
   <a href="News&Updates.html">News and Updates</a>
@@ -119,17 +115,6 @@ function closeNav() {
     <a href="Shopping.html" style="width: 90%;color:white;background-color:#448cff;font-size:450%;margin-top:3%;margin-bottom:3%;"class="btn btn-default">Interested?</a>
     </div>
   </center>
-<script>
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("rebar");
-var sticky = navbar.offsetTop;
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
+
 </body>
 </html>
