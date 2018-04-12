@@ -102,6 +102,9 @@ p{
   transition: 0.3s;
 }
 
+.sidenav a:link{
+  text-decoration:none;
+}
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;

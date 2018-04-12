@@ -1,3 +1,6 @@
+//carousel scripts 
+
+
 $(".carousel").swipe({
 
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -11,7 +14,20 @@ $(".carousel").swipe({
 });
 
 
-window.onscroll = function() {myFunction()};
+
+
+
+  //navbar scripts 
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "65%";
+  }
+
+  function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  }
+
+  window.onscroll = function() {myFunction()};
         var navbar = document.getElementById("rebar");
         var sticky = navbar.offsetTop;
 
@@ -24,10 +40,5 @@ window.onscroll = function() {myFunction()};
         }
 
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "65%";
-  }
 
-  function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  }
+

@@ -8,6 +8,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <link href = "News&UpdateCSS.css" rel = "stylesheet">
+<script type="text/javascript" src="CarAndNav.js"></script>
+
 
 <html>
     <head>
@@ -40,6 +42,9 @@
       .sidenav a:hover {
           color: #f1f1f1;
       }
+      .sidenav a:link{
+    text-decoration:none;
+}
 
       /* Position and style the close button (top right corner) */
       .sidenav .closebtn {
@@ -69,15 +74,6 @@
       }
       </style>
 
-      <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "60%";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-      </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -86,6 +82,7 @@
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="Index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
         <a href="Shopping.html">Products</a>
         <a href="Team.html">Meet the Team</a>
         <a href="News&Updates.html">News and Updates</a>
@@ -94,16 +91,6 @@
 
         <center>
             <div class = "container-fluid">
-<<<<<<< HEAD
-                <div class = "row">
-                    <div class = "col-md-4">
-                        <h3><img src = "News&UpdatesFolder/HSlogo.png" height = "125vh" width = "225vh"></h3>
-                    </div>
-                    <div class = "col-md-8">
-                        <center>
-                            <h1>NEWS & UPDATES</h1>
-                        </center>
-=======
                 <div class = "jumbotron container-fluid" style="margin-top:2.2vh;">
                     <div class = "row">
                         <div class = "col-md-4">
@@ -114,7 +101,6 @@
                                 <h1 style="color:white;">NEWS & UPDATES</h1>
                             </center>
                         </div>
->>>>>>> 0465a42e732355a52f0eec8364b7324099aebb0b
                     </div>
                 </div>
             </div>
