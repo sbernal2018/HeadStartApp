@@ -4,11 +4,12 @@ div{
 
 
 #header{
+   
     height:28vh;
-    border: 1em;
+    border:1em;
+    background-color:#b3ecff;
+    height:28vh;
     
-    background-color: #b3ecff;
-
 
 }
 

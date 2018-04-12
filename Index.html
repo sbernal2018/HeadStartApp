@@ -11,16 +11,10 @@
 
 
 <style>
-
-
-
 body{
     background-repeat: no-repeat;
     background-size: cover;
-    -moz-transform: scale(1.2); /* for Firefox, default 1*/
-      zoom:120%; /* For Chrome, IE, default 100%*/
 }
-
 p{
     color:navy;
     background-color: white;
@@ -29,7 +23,6 @@ p{
     border-radius: 3%;
     padding:2%;
 }
-
 h1{
     color:white;
 }
@@ -44,11 +37,6 @@ h1{
       overflow-x: hidden; /* Disable horizontal scroll */
       padding-top: 60px; /* Place content 60px from the top */
       transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-
-.sidenav a:link{
-    text-decoration:none;
 }
 /* The navigation menu links */
 .sidenav a {
@@ -103,7 +91,6 @@ function closeNav() {
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="Index.html">Home</a>
-  <a href="AboutUs.html">About Us</a>
   <a href="Shopping.html">Products</a>
   <a href="Team.html">Meet the Team</a>
   <a href="News&Updates.html">News and Updates</a>
@@ -136,7 +123,6 @@ function closeNav() {
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("rebar");
 var sticky = navbar.offsetTop;
-
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
