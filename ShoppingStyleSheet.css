@@ -1,8 +1,30 @@
-h1{
+#top{
     text-align: center;
     padding-top:10%;
     font-size:500%!important;
     color:white!important;
+}
+
+
+
+#boxes{
+    border-style: solid; 
+    border-radius:20px; 
+    box-shadow:5px 5px;
+    margin:10%;
+}
+
+img{
+    margin-top:6%;
+    margin-bottom:6%;
+
+}
+
+h1{
+    font-size:400%!important;
+    text-align:center;
+    font-weight:bold;
+    
 }
 
 
@@ -20,8 +42,10 @@ h1{
 
 /*Nav bar --------------------------*/
 body{
+    background-image:url("Images/sky.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+
     
     -moz-transform: scale(1.2); /* for Firefox, default 1*/
     zoom:120%; /* For Chrome, IE, default 100%*/
