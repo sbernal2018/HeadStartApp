@@ -13,11 +13,12 @@ label{
 }
 
 
+
+
 input[type=radio]{
-    /*border:0;
-    width: 20%;
-    height:20%;
-*/
+    height: 1.8em;
+    width: 1.8em;
+
 
 }
 
@@ -37,7 +38,14 @@ img{
 }
 
 h1{
-    font-size:400%!important;
+    font-size:470%!important;
+    text-align:center;
+    font-weight:bold;
+    
+}
+
+h2{
+    font-size:320%!important;
     text-align:center;
     font-weight:bold;
     

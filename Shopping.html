@@ -1,548 +1,397 @@
+<!DOCTYPE html>
 <html>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
+    <link rel = "stylesheet" href = "ShoppingStyleSheet.css">
 
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="CarAndNav.js"></script>
+    
+
+</head>
+
+<body>
 
 
-
-<div id="SITE_CONTAINER" data-santa-render-status="CLIENT"><div data-reactroot="" class="noop" data-santa-version="1.2744.25">
-<div>
-<style type="text/css" data-styleid="theme_fonts">
-.font_0 {font: normal normal normal 50px/3em avenir-lt-w01_35-light1475496,sans-serif;color:#2F2E2E;}
-.font_1 {font: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif ;color:#605E5E;}
-.font_2 {font: normal normal normal 56px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_3 {font: normal normal normal 90px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif ;color:#2F2E2E;}
-.font_4 {font: normal normal normal 50px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_5 {font: normal normal normal 33px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif ;color:#2F2E2E;}
-.font_6 {font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_7 {font: normal normal normal 17px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_8 {font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_9 {font: normal normal normal 13px/1.4em avenir-lt-w01_35-light1475496,sans-serif ;color:#2F2E2E;}
-.font_10 {font: normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif ;color:#605E5E;}
-</style>
-
-<style>
-
-  img{
-    display:block;
-    margin:auto;
-  }
-
-body{
-  background-repeat: no-repeat;
-  background-size: cover;
-  -moz-transform: scale(1.2); /* for Firefox, default 1*/
-    zoom:120%; /* For Chrome, IE, default 100%*/
-}
-h1{
-  color:white;
-}
-
-
-.row{
-  background-color:white;
-}
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color:#003D99; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 180px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 300%;
-    font-weight: bold;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-
-h1{
-  text-align:center
-
-}
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 600%;
-    margin-left: 50px;
-}
-.sticky {
-position: fixed;
-top: 0;
-width: 100%;
-}
-.sticky + .content {
-padding-top: 60px;
-}
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-</style>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "60%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-
-
-    <body background="Images/sky.jpeg">
-      <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="Index.html">Home</a>
-      <a href="AboutUs.html">About Us</a>
-      <a href="Shopping.html">Products</a>
-      <a href="Team.html">Meet the Team</a>
-      <a href="News&Updates.html">News and Updates</a>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Shopping.html">Products</a>
+        <a href="Team.html">Meet the Team</a>
+        <a href="News&Updates.html">News and Updates</a>
+    
     </div>
+
+
     <span id="rebar" onclick="openNav()" style="font-size:500%; margin-left:1%; color:white; z-index:1;">&#9776;</span>
 
 
+    <h1 id="top">Our Products</h1>
 
-        <div class = "container">
-            <h1 style="text-align:center">Retirement Planning</h1>
-            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
 
-                  <div class = "col-sm-5" style="margin-top:2%;">
-                    <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg1.webp>
+    <div class = "row" id="boxes">
+        <h1>Retirement Planning</h1>
+        <center><img src="Images/imagesfolder/Shopping/shopimg1.webp"/></center>
+        <center>
+            <h2>Individual Retirement Plan</h2>
 
-                  </div>
-
-                <div class = "col-sm-4">
-                        <p class="font_8"><span style="font-size:150%; margin-top:1%;">Individual Retirement Plan (IRA)</span></p>
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                        <h6 class="font_6"><span style="font-style:italic;">Initial Fee:</span> $250.00</h6>
-
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                        <h6 class="font_6"><span style="font-style:italic;">Monthly Fee:</span> $60.00</h6>
-
-                      </div>
-                        <div class = "col-sm-3">
-                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/individual-retirement-plan-initial-fee-ra18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:50%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/individual-retirement-plan-ira-monthly-fee-ra28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                        </div>
-                    </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-              <div class = "col-sm-5" style="margin-top:2%;">
-                <img style="width:70%;height:13%;"src=Images/imagesfolder/Shopping/shopimg2.webp>
-
-              </div>
-
-            <div class = "col-sm-4">
-                    <p class="font_8"><span style="font-size:20px;">401(k) Plan</span></p>
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Initial Fee:</span> $270.00</h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Monthly Fee:</span> $85.00&nbsp;</h6>
-                  </div>
-                    <div class = "col-sm-3">
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/401k-initial-fee-rb18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/401k-monthly-fee-rb28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:45%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                    </div>
+            <div class="col-3">
+                <input type="radio" id="price1"
+                name="contact" value="email">
+                <label for="price1">Initial Fee: $250</label>
             </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
 
-            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-              <div class = "col-sm-5" style="margin-top:2%;">
-                <img style="width:70%;height:13%;"src=Images/imagesfolder/Shopping/shopimg3.webp>
-
-              </div>
-
-            <div class = "col-sm-4">
-                    <p class="font_8"><span style="font-size:20px;">Annuities</span></p>
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Initial Fee: </span>$120.00</h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Monthly Fee: </span>$30.00</h6></div>
-                    <div class = "col-sm-3">
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/annuity-initial-fee-rc18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/annuity-monthly-fee-rc28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                    </div>
+            <div class="col-6">
             </div>
-          </div>
 
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-        <div class = "container">
-            <h1>Webinars and Seminars</h1>
-
-            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-              <div class = "col-sm-5" style="margin-top:2%;">
-                <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg4.webp>
-
-              </div>
-
-            <div class = "col-sm-4">
-                    <p class="font_8"><span style="font-size:20px;">Financial Literacy: Debit/Credit</span></p>
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                    <h6 class="font_6"><span style="font-style:italic;">Monthly Fee:</span> $250.00</h6></div>
-                    <div class = "col-sm-3">
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/financial-literacy-credit-debit-firm-fee-wa18/" style="color:#1CB1D0; background-color:#B8D9F6;margin-top:45%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/financial-literacy-credit-debit-monthly-fee-wa28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                    </div>
+            <div class="col-3">
+                <input type="radio" id="price2"
+                name="contact" value="phone">
+                <label for="price2">Monthly Fee: $60</label>
             </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-              <div class = "col-sm-5" style="margin-top:2%;">
-                <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg5.webp>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg2.webp"/></center>
+        <center>
+            <h2>401k Plan</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price3"
+                name="contact" value="email">
+                <label for="price3">Initial Fee: $270</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price4"
+                name="contact" value="phone">
+                <label for="price4">Monthly Fee: $85</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg3.webp"/></center>
+        <center>
+
+            <h2>Annuities</h2>
+            <div class="col-3">
+                <input type="radio" id="price5"
+                name="contact" value="email">
+                <label for="price5">Initial Fee: $120</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price6"
+                name="contact" value="phone">
+                <label for="price6">Monthly Fee: $30</label>
+            </div>
+        </center>
+
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        
+        
+        <hr>
+    </div>
+
+    <div class = "row" id="boxes">
+        <h1>Webinars and Seminars</h1>
+        <center><img src="Images/imagesfolder/Shopping/shopimg4.webp"/></center>
+        <center>
+            <h2>Financial Literacy:Debit/Credit</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price7"
+                name="contact" value="email">
+                <label for="price7">Firm: $2000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price8"
+                name="contact" value="phone">
+                <label for="price8">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg5.webp"/></center>
+        <center>
+            <h2>Emergency Savings</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price9"
+                name="contact" value="email">
+                <label for="price9">Firm: $2000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price10"
+                name="contact" value="phone">
+                <label for="price10">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg6.webp"/></center>
+        <center>
+            <h2>College Loans 101</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price11"
+                name="contact" value="email">
+                <label for="price11">Firm: $2000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price12"
+                name="contact" value="phone">
+                <label for="price12">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg7.webp"/></center>
+        <center>
+            <h2>Saving for the Future</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price13"
+                name="contact" value="email">
+                <label for="price13">Firm: $2000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price14"
+                name="contact" value="phone">
+                <label for="price14">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg8.webp"/></center>
+        <center>
+            <h2>Vacation Planning</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price15"
+                name="contact" value="email">
+                <label for="price15">Firm: $2,000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price16"
+                name="contact" value="phone">
+                <label for="price16">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg9.webp"/></center>
+        <center>
+            <h2>Insurance 101</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price17"
+                name="contact" value="email">
+                <label for="price17">Firm: $2,000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price18"
+                name="contact" value="phone">
+                <label for="price18">Monthly Fee: $250</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+    </div>
+
+    <div class = "row" id="boxes">
+        <h1>Services</h1>
+        <center><img src="Images/imagesfolder/Shopping/shopimg10.webp"/></center>
+        <center>
+            <h2>Financial Advisory</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price19"
+                name="contact" value="email">
+                <label for="price19">Initial Fee: $2,200</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg11.webp"/></center>
+        <center>
+            <h2>Mutual Funds</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price20"
+                name="contact" value="email">
+                <label for="price20">Initial Fee: $225</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg12.png"/></center>
+        <center>
+            <h2>529 Plan</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price21"
+                name="contact" value="email">
+                <label for="price21">Initial Fee: $100</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+    </div>
+
+    <div class = "row" id="boxes">
+        <h1>Packages</h1>
+        <center><img src="Images/imagesfolder/Shopping/shopimg13.png"/></center>
+        <center>
+            <h2>Premium Package</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price22"
+                name="contact" value="email">
+                <label for="price22">Firm Fee: $15,000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+                <input type="radio" id="price23"
+                name="contact" value="phone">
+                <label for="price23">Individual Fee: $2,000</label>
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg14.png"/></center>
+        <center>
+
+            <h2>Student Package</h2>
+
+            <div class="col-3">
+                
+                <input type="radio" id="price24"
+                name="contact" value="email">
+                <label for="price24">$650</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+
+
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg15.webp"/></center>
+        <center>
+            <h2>Insurance Package</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price25"
+                name="contact" value="email">
+                <label for="price25">$650</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+        <center><img src="Images/imagesfolder/Shopping/shopimg16.webp"/></center>
+        <center>
+            <h2>Firm Package</h2>
+
+            <div class="col-3">
+                <input type="radio" id="price26"
+                name="contact" value="email">
+                <label for="price26">$5,000</label>
+            </div>
+
+            <div class="col-6">
+            </div>
+
+            <div class="col-3">
+            </div>
+        </center>
+        <center><a onclick="right_price()" style="color:#1CB1D0; background-color:#B8D9F6;font-size:300%;" class="btn btn-default">Buy Now</a></center>
+        <hr>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 
-              </div>
 
-            <div class = "col-sm-4">
-                        <p class="font_8"><span style="font-size:20px;">Emergency Savings</span></p>
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
 
-                        <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
 
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
 
-                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
 
-                        <h6 class="font_6"><span style="font-style:italic;">Individual:</span> $250.00</h6></div>
-                        <div class = "col-sm-3">
-                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/emergency-savings-firm-fee-wb18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/emergency-savings-individual-fee-wa28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                        </div>
-                </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                  <div class = "col-sm-5" style="margin-top:2%;">
-                    <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg6.webp>
-
-                  </div>
-
-                <div class = "col-sm-4" style="margin-top:2%;">
-                            <p class="font_8"><span style="font-size:20px;">College Loans 101</span></p>
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
-
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span style="font-style:italic;">Individual:</span> $250.00</h6></div>
-                            <div class = "col-sm-3">
-                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/college-loans-101-firm-fee-wf18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/college-loans-101-individual-fee-wf28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                            </div>
-                    </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                    <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                      <div class = "col-sm-5" style="margin-top:2%;">
-                        <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg7.webp>
-
-                      </div>
-
-                    <div class = "col-sm-4">
-                                <p class="font_8"><span style="font-size:20px;">Saving for the Future</span></p>
-                                <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
-
-                                <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                <h6 class="font_6"><span style="font-style:italic;">Individual:</span> $250.00</h6></div>
-                                <div class = "col-sm-3">
-                                  <a href="https://portal.veinternational.org/buybuttons/us01004/btn/future-savings-firm-fee-wc18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                                  <a href="https://portal.veinternational.org/buybuttons/us01004/btn/future-savings-individual-fee-wc28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                </div>
-                        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                        <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                          <div class = "col-sm-5" style="margin-top:2%;">
-                            <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg8.webp>
-
-                          </div>
-
-                        <div class = "col-sm-4">
-                                    <p class="font_8"><span style="font-size:20px;">Vacation Planning</span></p>
-                                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                    <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
-
-                                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                    <h6 class="font_6"><span style="font-style:italic;">Individual:</span> $250.00</h6></div>
-                                    <div class = "col-sm-3">
-                                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/vacation-planning-firm-fee-wd18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                                      <a href="https://portal.veinternational.org/buybuttons/us01004/btn/vacation-planning-individual-fee-wd28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                    </div>
-                            </div>
-                                  h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                              <div class = "col-sm-5" style="margin-top:2%;">
-                                <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg9.webp>
-
-                              </div>
-
-                            <div class = "col-sm-4">
-                                        <p class="font_8"><span style="font-size:20px;">Insurance 101</span></p>
-                                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                        <h6 class="font_6"><span style="font-style:italic;">Firm:</span> $2000.00</h6>
-
-                                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                        <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                        <h6 class="font_6"><span style="font-style:italic;">Individual:</span> $250.00</h6></div>
-                                        <div class = "col-sm-3">
-                                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/insurance-101-firm-fee-wh18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/insurance-101-individual-fee-wh28/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                        </div>
-                                </div>
-        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-        <div class = "container">
-
-                    <h1>Services</h1>
-                    <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                    <div class = "col-sm-5" style="margin-top:2%;">
-                      <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg10.webp>
-
-                    </div>
-
-                  <div class = "col-sm-4">
-                            <p class="font_8"><span style="font-size:20px;">Financial Advisory</span></p>
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span style="font-style:italic;">Initial Fee:</span> $2200.00</h6>
-
-
-                          </div>
-                          <div class = "col-sm-3">
-                            <a href="https://portal.veinternational.org/buybuttons/us01004/btn/financial-advisory-firm-fee-sa18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                          </div>
-                    </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                    <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                      <div class = "col-sm-5" style="margin-top:2%;">
-                        <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg11.webp>
-
-                      </div>
-
-                    <div class = "col-sm-4">
-                                <p class="font_8"><span style="font-size:20px;">Mutual Funds</span></p>
-                                <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                <h6 class="font_6"><span style="font-style:italic;">Initial Fee: </span>$225.00</h6>
-
-                            </div>
-                            <div class = "col-sm-3">
-                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/mutual-funds-initial-fee-sb18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                            </div>
-                        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                        <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                          <div class = "col-sm-5" style="margin-top:2%;">
-                            <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg12.png>
-
-                          </div>
-
-                        <div class = "col-sm-4">
-                                    <p class="font_8"><span style="font-size:20px;">529 Plan</span></p>
-                                    <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                                    <h6 class="font_6"><span style="font-style:italic;">Initial Fee: </span>$100.00</h6>
-
-                                </div>
-                                <div class = "col-sm-3">
-                                  <a href="https://portal.veinternational.org/buybuttons/us01004/btn/529-initial-fee-sc18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                </div>
-                            </div>
-
-
-
-        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-        <div class = "container">
-            <h1>Packages</h1>
-                <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                  <div class = "col-sm-5" style="margin-top:2%;">
-                    <img style="width:70%;height:13%;"src=Images/imagesfolder/Shopping/shopimg13.png>
-
-                  </div>
-
-                <div class = "col-sm-4">
-                            <p class="font_8"><span style="font-size:20px;">Premium Package</span></p>
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span style="font-style:italic;">Firm Fee: </span>$15,000</h6>
-
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-
-                            <h6 class="font_6"><span style="font-style:italic;">Individual Fee: </span>$2000</h6></div>
-                            <div class = "col-sm-3">
-                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/premium-package-all-workshops-pa18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:30%;font-size:150%;" class="btn btn-default">Buy Now</a>
-                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/premium-package-individual-fee-pa18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:40%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                            </div>
-
-                        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                    <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                      <div class = "col-sm-5" style="margin-top:2%;">
-                        <img style="width:70%;height:13%;"src=Images/imagesfolder/Shopping/shopimg14.png>
-
-                      </div>
-
-                    <div class = "col-sm-4">
-                                <p class="font_8"><span style="font-size:20px;">Student Package - $650</span></p>
-                                <p class="font_8"><span style="font-size:20px;">Includes:</span></p>
-                                    <ul class="font_6" style="font-size:20px;">
-                                            <li>
-                                            <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Financial literacy</span></p>
-                                            </li>
-                                            <li>
-                                            <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">College loans 101</span></p>
-                                            </li>
-                                            <li>
-                                            <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Emergency saving</span></p>
-                                            </li>
-                                        </ul></div>
-                                        <div class = "col-sm-3">
-                                          <a href="https://portal.veinternational.org/buybuttons/us01004/btn/student-package-pb18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:70%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                        </div>
-                        </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                        <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                          <div class = "col-sm-5" style="margin-top:2%;">
-                            <img style="width:70%;height:14%;"src=Images/imagesfolder/Shopping/shopimg15.webp>
-
-                          </div>
-
-                        <div class = "col-sm-4">
-                                    <p class="font_8"><span style="font-size:20px;">Insurance Package - $650</span></p>
-                                    <p class="font_8"><span style="font-size:20px;">Includes:</span></p>
-                                        <ul class="font_6" style="font-size:20px;">
-                                                <li>
-                                                <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Insurance 101</span></p>
-                                                </li>
-                                                <li>
-                                                <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Loan management</span></p>
-                                                </li>
-                                                <li>
-                                                <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Emergency saving</span></p>
-                                                </li>
-                                            </ul></div>
-                                            <div class = "col-sm-3">
-                                              <a href="https://portal.veinternational.org/buybuttons/us01004/btn/insurance-package-pc18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:70%; font-size:150%" class="btn btn-default">Buy Now</a>
-
-                                            </div>
-                            </div>
-<h6 class="font_6"><span class="wixGuard">&#8203;</span></h6>
-                            <div class = "row" style="border-style: solid; border-radius:20px; box-shadow:5px 5px;">
-                              <div class = "col-sm-5" style="margin-top:2%;">
-                                <img style="width:70%;height:13%;"src=Images/imagesfolder/Shopping/shopimg16.webp>
-
-                              </div>
-
-                            <div class = "col-sm-4">
-                                        <p class="font_8"><span style="font-size:20px;">Firm Package - $650</span></p>
-                                        <p class="font_8"><span style="font-size:20px;">Includes:</span></p>
-                                            <ul class="font_6" style="font-size:20px;">
-                                                    <li>
-                                                    <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Financial literacy</span></p>
-                                                    </li>
-                                                    <li>
-                                                    <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Future savings</span></p>
-                                                    </li>
-                                                    <li>
-                                                    <p class="font_8" style="font-size:20px;"><span style="font-size:20px;">Retirement planning</span></p>
-                                                    </li>
-                                                </ul></div>
-                                                <div class = "col-sm-3">
-                                                  <a href="https://portal.veinternational.org/buybuttons/us01004/btn/firm-package-pd18/" style="color:#1CB1D0; background-color:#B8D9F6; margin-top:70%;font-size:150%;" class="btn btn-default">Buy Now</a>
-
-                                                </div>
-                                    </div>
-                                  </br>
-                                </div>
-
-
-                                <script>
-                                window.onscroll = function() {myFunction()};
-                                var navbar = document.getElementById("rebar");
-                                var sticky = navbar.offsetTop;
-
-                                function myFunction() {
-                                  if (window.pageYOffset >= sticky) {
-                                    navbar.classList.add("sticky")
-                                  } else {
-                                    navbar.classList.remove("sticky");
-                                  }
-                                }
-                                </script>
-    </body>
 </html>
